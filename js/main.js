@@ -11,11 +11,14 @@ createApp({
         inputValue:'cosa vedi nell \' immagine ',
         numA: 2,
         numB: 6,
+        colori: ['giallo', 'rosso', 'blu'],
       }
     },
     methods: {
         onClick () {
-            console.log('hai vinto un milione di euro');
+            console.log('hai vinto un milione di euro', this, this.colori[0]);
+            
+            
         },
         somma (a, b) {
             return a + b
